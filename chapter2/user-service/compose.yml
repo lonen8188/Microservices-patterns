@@ -1,0 +1,10 @@
+services:
+  mysql-2:
+    image: mysql:latest
+    container_name: mysql-2
+    environment:
+      MYSQL_DATABASE: user_db
+      MYSQL_ROOT_PASSWORD: 1234
+      TZ: Asia/Seoul
+    ports:
+      - 3308:3306      
